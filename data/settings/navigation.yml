@@ -1,0 +1,5 @@
+nav_items:
+  - label: Content
+    path: /content/
+  - label: Settings
+    path: /settings/
