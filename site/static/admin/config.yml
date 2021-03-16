@@ -7,6 +7,7 @@ public_folder: "img"
 collections: # A list of collections the CMS should be able to edit
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
+    tag: "Content"
     folder: "site/content/post" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
@@ -17,6 +18,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"
+    tag: "Content"
     files:
       - file: "site/content/_index.md"
         label: "Home Page"
@@ -80,3 +82,17 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Heading, name: heading, widget: string}
               - {label: Text, name: text, widget: text}
               - {label: Image, name: imageUrl, widget: image}
+  - name: settings
+    label: Settings
+    tag: "Settings"
+    files:
+      - file: data/settings/navigation.yml
+        label: Navigation
+        name: navigation
+        fields:
+          - label: Navigation
+            name: nav_items
+            widget: list
+            fields:
+              - {label: Label, name: label, widget: string}
+              - {label: Path, name: path, widget: string}
