@@ -1,0 +1,5 @@
+nav_items:
+  - label: Nav 1
+    path: /post/new-post/
+  - label: Nav 2
+    path: /post/brewing-chemex/
