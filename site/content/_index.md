@@ -26,7 +26,7 @@ products:
       tools for every taste and experience level. No matter if you roast your
       own beans or just bought your first french press, you’ll find a gadget to
       fall in love with in our shop.
-  - image: img/kitten_500 × 387_1.jpeg
+  - image: img/kitten_500 × 387_4.jpeg
     text: Cat
 values:
   heading: Our values
